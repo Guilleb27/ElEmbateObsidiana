@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+  
+  /* Header */
+  h1 {
+    padding: 1em;
+    margin-left: 10%;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 250%;
+        
+    text-shadow: yellow 0px 0px 10px;
+  }
+
+  .header {
+    
+     width:90%;
+     background-color:  rgb(139, 80, 53);
+     border: 3px solid black;
+
+     display:flex;
+     flex-direction:row;
+     flex-wrap:wrap;
+     justify-content: flex-start;
+     align-items: center;
+     list-style-type: none;
+     margin-bottom: 7%;
+     margin-left: 5%;
+
+     font-family: "Roboto", sans-serif;
+     font-weight: 600;
+     font-size: 110%;
+     color: black;
+     
+     
+  }
+
+  .header .BotonesHeader {
+   padding: 1em;
+   margin-right: 6%;
+   margin-left: 6%;
+   display:flex;
+   flex-direction:row;
+   flex-wrap:wrap;
+   justify-content: flex-start;
+   align-items: center;
+      
+  }
+
+  footer {
+  padding: 0.2em;
+  position:absolute;
+  bottom: 0;
+  background-color: rgb(63, 62, 62);
+  width:100%;
+
+  text-align: center;  
+  font-size: 75%;
+  color:white;
+  }
+  /* El footer no se pega al fondo en el index, no termino de entender por qué. */
+
+  /* Index */
+.TextSection {
+  width:90%;
+  padding: 3em;
+  background-color:  rgb(139, 80, 53);
+  border: 3px solid black;
+  text-align: center;
+  margin-bottom: 7%;
+  margin-left: 5%;
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  margin-bottom: 1%;
+}
+
+.TextSection p {
+  font-size: 100%;
+  max-width: 80%;
+  margin-left: 10%;
+}
+
+.LinkSection {
+  width:90%;
+  padding: 3em;
+  background-color:  rgb(139, 80, 53);
+  border: 3px solid black;
+  margin-bottom: 7%;
+  margin-left: 5%;
+
+  font-family: "Roboto", sans-serif;
+  font-weight:500;
+  text-align: center;
+  list-style-type:none;
+  /* Queria sacarle los puntitos a la lista de links, pero no me está tomando el list-style-type y no entiendo por qué */
+}
+
+.LinkSection p {
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+/* Media */
+
+  .contenedor{
+  max-width: 150em;
+  width:96%;
+  padding:1em;
+  margin-left: 2%;
+  margin-bottom: 7%;
+
+  font-family: "Roboto", sans-serif;
+  font-weight:500;
+  text-align: center;
+  }
+
+.contenedor .BotonesGuia{
+     width:100%;
+     display:flex;
+     flex-direction:row;
+     flex-wrap:wrap;
+     justify-content: flex-start;
+     align-items: center;
+     list-style-type: none;  
+}
+
+.contenedor .BotonGuia{
+   background-color:  rgb(117, 117, 117);
+   padding: 1em;
+   margin-right: 1%;
+   border: 3px solid black;
+   }
+
+.contenedor .BotonGuiaActivo{
+  background-color:rgb(139, 80, 53) ;
+  padding: 1em;
+  margin-right: 1%;
+  border: 3px solid black;
+  }
+
+.subcontenedor{
+  background-color: rgb(139, 80, 53);
+  position: relative;
+  border: 3px solid black;  
+  }
+  
+.bloque{
+  background-color: rgb(139, 80, 53);
+  padding:1em;
+  position: relative;
+  top:0;
+  opacity:0;
+}
+
+.bloqueActivo {
+  background-color: rgb(139, 80, 53);
+  padding:1em;
+  position: absolute;
+  top:0;
+  margin-top:1%;
+    }
+
+  /* Guias - Foro - Portal */
+  .PlaceHolder {
+      width:90%;
+      padding: 3em;
+      background-color:  rgb(139, 80, 53);
+      border: 3px solid black;
+      text-align: center;
+      margin-bottom: 7%;
+      margin-left: 5%;
+      font-family: "Roboto", sans-serif;
+
+  }
+
+  /* Pendientes a los que no llegué por falta de tiempo: 
+  - Agregarle el logo de la hermandad a la izquierda del título
+  - Agregar los iconos a cada seccion y a los links de los contactos
+  - Conseguir una forma menos cuadrada y estética en cada cuadro. 
+  Tuve toda la intención pero se me complicó, y de todas formas me pareció que no era el punto de esta entrega, ya que son todos cambios estéticos. Lo importante por ahora es que me corrijan el html a ver si voy bien encaminado!  
+  Desde ya, muchas gracias y que tenga una excelente semana!
+  */
