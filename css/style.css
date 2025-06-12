@@ -5,9 +5,13 @@
   }
 
 @import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
   
-  /* Header */
+/* -----Todas las Paginas----- */
+  body {
+    
+  }  
+
+/* Header */
   h1 {
     padding: 1em;
     margin-left: 10%;
@@ -53,6 +57,7 @@
    align-items: center;
       
   }
+/* Footer */
 
   footer {
   padding: 0.2em;
@@ -67,8 +72,8 @@
   }
   /* El footer no se pega al fondo en el index, no termino de entender por qué. */
 
-  /* Index */
-.TextSection {
+/* -----Index----- */
+  .TextSection {
   width:90%;
   padding: 3em;
   background-color:  rgb(139, 80, 53);
@@ -77,19 +82,19 @@
   margin-bottom: 7%;
   margin-left: 5%;
   font-family: "Roboto", sans-serif;
-}
+  }
 
-h2 {
+  h2 {
   margin-bottom: 1%;
-}
+  }
 
-.TextSection p {
+  .TextSection p {
   font-size: 100%;
   max-width: 80%;
   margin-left: 10%;
-}
+  }
 
-.LinkSection {
+  .LinkSection {
   width:90%;
   padding: 3em;
   background-color:  rgb(139, 80, 53);
@@ -100,18 +105,19 @@ h2 {
   font-family: "Roboto", sans-serif;
   font-weight:500;
   text-align: center;
+  }
+  .LinkSection .LinkList {
   list-style-type:none;
-  /* Queria sacarle los puntitos a la lista de links, pero no me está tomando el list-style-type y no entiendo por qué */
-}
+  }
 
-.LinkSection p {
+  .LinkSection p {
   margin-bottom: 1em;
   font-weight: 600;
-}
+  }
 
-/* Media */
+/* -----Media----- */
 
-  .contenedor{
+  .contenedor {
   max-width: 150em;
   width:96%;
   padding:1em;
@@ -123,7 +129,7 @@ h2 {
   text-align: center;
   }
 
-.contenedor .BotonesGuia{
+  .contenedor .BotonesGuia {
      width:100%;
      display:flex;
      flex-direction:row;
@@ -131,45 +137,76 @@ h2 {
      justify-content: flex-start;
      align-items: center;
      list-style-type: none;  
-}
+  }
 
-.contenedor .BotonGuia{
+  .contenedor .BotonGuia{
    background-color:  rgb(117, 117, 117);
    padding: 1em;
    margin-right: 1%;
    border: 3px solid black;
    }
 
-.contenedor .BotonGuiaActivo{
+  .contenedor .BotonGuiaActivo{
   background-color:rgb(139, 80, 53) ;
   padding: 1em;
   margin-right: 1%;
   border: 3px solid black;
   }
 
-.subcontenedor{
+  .subcontenedor{
   background-color: rgb(139, 80, 53);
   position: relative;
   border: 3px solid black;  
   }
   
-.bloque{
+  .bloque{
   background-color: rgb(139, 80, 53);
   padding:1em;
   position: relative;
   top:0;
   opacity:0;
-}
+  }
 
-.bloqueActivo {
+  .bloqueActivo {
   background-color: rgb(139, 80, 53);
   padding:1em;
   position: absolute;
   top:0;
   margin-top:1%;
+  }
+
+/* -----Guias----- */
+  .ListaGuias {
+      width:90%;
+      padding: 3em;
+      background-color:  rgb(139, 80, 53);
+      border: 3px solid black;
+      text-align: center;
+      margin-bottom: 7%;
+      margin-left: 5%;
+      font-family: "Roboto", sans-serif;
+
+      display:grid;
+      grid-template-rows: 50px;
+      grid-template-columns: 15% 85% ;
+      grid-auto-rows: 50px;
+      row-gap: 8px;
+      column-gap: 8px;
+          }
+  
+  .ImagenGuia {
+    background-color: green;
+    border: 2px solid black;
+  }
+  .ItemGuia {
+    background-color: blue; 
+    border: 2px solid black;
+    font-size: 100%;
+    text-align: center;
+    vertical-align: bottom;
     }
 
-  /* Guias - Foro - Portal */
+/* Foro - Portal */
   .PlaceHolder {
       width:90%;
       padding: 3em;
