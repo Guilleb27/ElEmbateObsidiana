@@ -61,7 +61,7 @@
 
   footer {
   padding: 0.2em;
-  position:absolute;
+  position:relative;
   bottom: 0;
   background-color: rgb(63, 62, 62);
   width:100%;
@@ -70,9 +70,8 @@
   font-size: 75%;
   color:white;
   }
-  /* El footer no se pega al fondo en el index, no termino de entender por qué. */
 
-/* -----Index----- */
+  /* -----Index----- */
   .TextSection {
   width:90%;
   padding: 3em;
@@ -187,23 +186,24 @@
       font-family: "Roboto", sans-serif;
 
       display:grid;
-      grid-template-rows: 50px;
-      grid-template-columns: 15% 85% ;
-      grid-auto-rows: 50px;
+      grid-template-rows: 150px ;
+      grid-template-columns: 150px 1450px;
+      grid-auto-rows: 150px;
       row-gap: 8px;
       column-gap: 8px;
-          }
+      }
   
   .ImagenGuia {
-    background-color: green;
+    background-color: white;
     border: 2px solid black;
   }
   .ItemGuia {
-    background-color: blue; 
+    background-color: rgb(216, 139, 104); 
     border: 2px solid black;
     font-size: 100%;
     text-align: center;
     vertical-align: bottom;
+    grid-row: span 2;
     }
 
 /* Foro - Portal */
