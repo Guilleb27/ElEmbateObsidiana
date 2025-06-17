@@ -1,6 +1,11 @@
 Este documento es para llevar la cuenta de los cambios que ya hice y los que me faltan.
 
-1) Grids ------ pendiente
-2) Flexbox ----- pendiente
-3) Bootstrap-----pendiente
+1) Grids ------ Agregado en "Guias" (falta colocar imagenes)
+2) Flexbox ----- Header
+3) Bootstrap-----Agregado a todas las paginas. Libreria utilizada para iconos en barra de header y links (index)
 4) Responsive ----- pendiente
+
+
+
+Otros:
+- Agregar logo en titulo en head
