@@ -6,6 +6,3 @@ Este documento es para llevar la cuenta de los cambios que ya hice y los que me 
 4) Responsive ----- pendiente
 
 
-
-Otros:
-- Agregar logo en titulo en head
