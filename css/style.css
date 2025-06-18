@@ -8,8 +8,19 @@
   
 /* -----Todas las Paginas----- */
 
-
 /* Header */
+  .TituloPrincipal {
+    display:inline-block;
+    align-items: flex;
+    float:left;
+    margin-left: 10%;
+    margin-top: 20px;
+  }
+  .Logo {
+   margin-right: 30px;
+  }
+
+
   h1 {
     padding: 1em;
     margin-left: 10%;
@@ -18,47 +29,51 @@
     font-weight: 800;
     font-size: 250%;
     font-weight: 5px;
-        
+    color: black;
     text-shadow: rgb(253, 253, 253) 0px 0px 10px;
   }
 
   .header {
     
-     width:90%;
-     background-color:  rgb(139, 80, 53);
-     border: 3px solid black;
-     border-radius:10px;
+    width:90%;
+    background-color:  rgb(139, 80, 53);
+    border: 3px solid black;
+    border-radius:10px;
 
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+    margin-bottom: 7%;
+    margin-left: 5%;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 110%;
+  }
+
+    .header .BotonesHeader {
+     padding: 1em;
+     margin-right: 4%;
+     margin-left: 4%;
      display:flex;
      flex-direction:row;
      flex-wrap:wrap;
      justify-content: flex-start;
      align-items: center;
-     list-style-type: none;
-     margin-bottom: 7%;
-     margin-left: 5%;
+    }
 
-     font-family: "Roboto", sans-serif;
-     font-weight: 600;
-     font-size: 110%;
-     color: black;
-     text-decoration:none;
-     
-     
-  }
+      .header .BotonesHeader a {
+       text-decoration: none;
+       color:black;
+      }
 
-  .header .BotonesHeader {
-   padding: 1em;
-   margin-right: 4%;
-   margin-left: 4%;
-   display:flex;
-   flex-direction:row;
-   flex-wrap:wrap;
-   justify-content: flex-start;
-   align-items: center;
-   
-      
-  }
+      .header .BotonesHeader a:hover {
+       text-shadow: rgb(253, 253, 253) 0px 0px 10px;
+      }
+
 /* Footer */
 
   footer {
@@ -73,7 +88,7 @@
   color:white;
   }
 
-  /* -----Index----- */
+/* -----Index----- */
   .TextSection {
   width:90%;
   padding: 3em;
@@ -92,15 +107,15 @@
   margin-bottom: 1%;
   }
 
-  .TextSection p {
-  font-size: 100%;
-  max-width: 80%;
-  margin-left: 10%;
-  }
+    .TextSection p {
+    font-size: 100%;
+    max-width: 80%;
+    margin-left: 10%;
+    }
 
   .LinkSection {
   width:90%;
-  padding: 3em;
+  padding: 2em;
   background-color:  rgb(139, 80, 53);
   border: 3px solid black;
   margin-bottom: 7%;
@@ -113,14 +128,23 @@
   color:black;
   }
 
-  .LinkSection .LinkList {
-  list-style-type:none;
-  }
+    .LinkSection .LinkList {
+    list-style-type:none;
+    }
 
-  .LinkSection p {
-  margin-bottom: 1em;
-  font-weight: 600;
-  }
+    .LinkSection p {
+    margin-bottom: 1em;
+    font-weight: 600;
+    }
+
+      .LinkSection .LinkList a {
+      text-decoration:none;
+      color:black;
+      }
+
+      .LinkSection .LinkList a:hover {
+      text-shadow: rgb(253, 253, 253) 0px 0px 10px;
+      }
 
 /* -----Media----- */
   .MediaContainer {
@@ -149,41 +173,49 @@
      list-style-type: none;  
   }
 
-  .contenedor .BotonGuia{
-   background-color:  rgb(117, 117, 117);
+    .MediaContainer .contenedor .BotonGuia{
+      background-color:  rgb(117, 117, 117);
+      padding: 1em;
+      margin-right: 1%;
+      border: 3px solid rgb(0, 0, 0);
+      }
+
+        .MediaContainer .contenedor .BotonesGuia li {
+        color:rgb(0, 0, 0);
+        }
+  
+        .MediaContainer .contenedor .BotonesGuia .BotonGuia:hover {
+        text-shadow: rgb(253, 253, 253) 0px 0px 10px;
+        }
+
+   .contenedor .BotonGuiaActivo{
+   background-color:rgb(139, 80, 53) ;
    padding: 1em;
    margin-right: 1%;
    border: 3px solid black;
    }
 
-  .contenedor .BotonGuiaActivo{
-  background-color:rgb(139, 80, 53) ;
-  padding: 1em;
-  margin-right: 1%;
-  border: 3px solid black;
-  }
-
-  .subcontenedor{
-  background-color: rgb(139, 80, 53);
-  position: relative;
-  border: 3px solid black;  
-  }
+   .subcontenedor{
+   background-color: rgb(139, 80, 53);
+   position: relative;
+   border: 3px solid black;  
+   }
   
-  .bloque{
-  background-color: rgb(139, 80, 53);
-  padding:1em;
-  position: relative;
-  top:0;
-  opacity:0;
-  }
+     .bloque{
+     background-color: rgb(139, 80, 53);
+     padding:1em;
+     position: relative;
+     top:0;
+     opacity:0;
+     }
 
-  .bloqueActivo {
-  background-color: rgb(139, 80, 53);
-  padding:1em;
-  position: absolute;
-  top:0;
-  margin-top:1%;
-  }
+       .bloqueActivo {
+       background-color: rgb(139, 80, 53);
+       padding:1em;
+       position: absolute;
+       top:0;
+       margin-top:1%;
+       }
 
 /* -----Guias----- */
   .ListaGuias {
@@ -195,10 +227,11 @@
 
       display:grid;
       grid-template-rows: 150px ;
-      grid-template-columns: 150px 1450px;
+      grid-template-columns: 150px 90%;
       grid-auto-rows: 150px;
       row-gap: 8px;
       column-gap: 8px;
+      position:relative;
 
       text-align: center;
       margin-bottom: 7%;
@@ -215,7 +248,7 @@
     border: 2px solid black;
     font-size: 100%;
     text-align: center;
-    vertical-align: bottom;
+    
     grid-row: span 2;
     }
 

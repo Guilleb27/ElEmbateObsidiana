@@ -2,7 +2,7 @@ Este documento es para llevar la cuenta de los cambios que ya hice y los que me 
 
 1) Grids ------ Agregado en "Guias" (falta colocar imagenes)
 2) Flexbox ----- Header
-3) Bootstrap-----Agregado a todas las paginas. Libreria utilizada para iconos en barra de header y links (index)
+3) Bootstrap-----Agregado a todas las paginas. Libreria utilizada para iconos en barra de header y links (index). Funcion Hover agregada en header y links. 
 4) Responsive ----- pendiente
 
 
