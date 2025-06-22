@@ -226,8 +226,7 @@
       border-radius:10px;
 
       display:grid;
-      grid-template-rows: 150px ;
-      grid-template-columns: 150px 90%;
+      grid-template-columns: 150px 9fr;
       grid-auto-rows: 150px;
       row-gap: 8px;
       column-gap: 8px;
@@ -239,18 +238,40 @@
       font-family: "Roboto", sans-serif;
       }
   
-  .ImagenGuia {
-    background-color: white;
-    border: 2px solid black;
-  }
-  .ItemGuia {
-    background-color: rgb(216, 139, 104); 
-    border: 2px solid black;
-    font-size: 100%;
-    text-align: center;
-    
-    grid-row: span 2;
-    }
+      .ImagenGuia {
+        background-color: white;
+        border: 2px solid black;
+       }
+      .ItemGuia {
+        background-color: rgb(216, 139, 104); 
+        border: 2px solid black;
+        grid-row: span 2;
+          
+        display:flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 100%;
+        color:rgb(0, 0, 0);      
+       }
+            .GuideTitle {
+              list-style-type:none;
+              font-size: 150%;
+              font-weight: 10px;
+            }
+            .GuideLink {
+              list-style-type:none;
+              font-size: 120%;
+              font-weight: 10px;
+            }
+            .GuideImg {
+              list-style-type:none;
+              border:2px solid black;
+            }
+       
+      .GuiaAutor {
+        color:black;
+       }
 
 /* Foro - Portal */
   .PlaceHolder {
