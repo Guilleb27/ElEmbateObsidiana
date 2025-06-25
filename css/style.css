@@ -29,7 +29,7 @@
     font-size: 250%;
     font-weight: 5px;
     color: black;
-    text-shadow: rgb(253, 253, 253) 0px 0px 10px;
+    text-shadow: rgb(235, 223, 119) -2px 0px 12px;
   }
 
   .header {
@@ -67,10 +67,11 @@
       .header .BotonesHeader a {
        text-decoration: none;
        color:black;
+       text-shadow: rgb(253, 253, 253) -2px 0px 12px;
       }
 
       .header .BotonesHeader a:hover {
-       text-shadow: rgb(253, 253, 253) 0px 0px 10px;
+       text-shadow: rgb(235, 223, 119) -2px 0px 12px;
       }
 
 /* Footer */
@@ -189,7 +190,7 @@
       font-family: "Roboto", sans-serif;
       }
   
-      .ImagenGuia {
+      .ProfilePic {
         background-color: white;
         border: 2px solid black;
        }
@@ -224,8 +225,13 @@
         color:black;
        }
 
-/* Foro - Portal */
-  .PlaceHolder {
+/* Portal */
+
+  h2 {
+    color:black;
+  }
+
+  .ContentSection {
       width:90%;
       padding: 3em;
       background-color:  rgb(139, 80, 53);
@@ -236,5 +242,57 @@
       margin-bottom: 7%;
       margin-left: 5%;
       font-family: "Roboto", sans-serif;
-
   }
+  iframe {
+    overflow:auto;
+  }
+    .RaidRosterTWW {
+      border: 2px solid black;
+      overflow:auto;
+    }
+
+/* Relatos */
+  .RelatosSection {
+      width:90%;
+      padding: 3em;
+      background-color:  rgb(139, 80, 53);
+      border: 3px solid black;
+      border-radius:10px;
+
+      display:grid;
+      grid-template-columns: 150px 9fr;
+      grid-auto-rows: 150px;
+      row-gap: 8px;
+      column-gap: 8px;
+      position:relative;
+
+      text-align: center;
+      margin-bottom: 7%;
+      margin-left: 5%;
+      font-family: "Roboto", sans-serif;
+      }
+        .RelatoTitulo {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        color:black;
+        font-weight:600;
+        }
+  
+        .ProfilePic {
+        background-color: white;
+        border: 2px solid black;
+        }
+      
+       .Relato {
+        background-color: rgb(216, 139, 104); 
+        border: 2px solid black;
+        grid-row: span 4;
+          
+        display:flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 100%;
+        color:rgb(0, 0, 0);  
+        }
