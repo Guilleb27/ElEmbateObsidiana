@@ -74,6 +74,17 @@
        text-shadow: rgb(235, 223, 119) -2px 0px 12px;
       }
 
+    @media (max-width: 600px) {
+        .header {
+             flex-direction: column;
+             align-items:start;
+      }  
+      .BotonesHeader {
+           padding: 0;
+      }
+    }
+    
+
 /* Footer */
 
   footer {
@@ -168,6 +179,15 @@
        .MediaContainer img {
        padding: 1em;
        }
+  
+  @media (max-width: 600px) {
+       .MediaContainer {
+        padding: 1em;
+       }
+       .MediaContainer img {
+        padding: 0.1em;
+       }
+  }
 
 /* -----Guias----- */
   .ListaGuias {
@@ -176,6 +196,7 @@
       background-color:  rgb(139, 80, 53);
       border: 3px solid black;
       border-radius:10px;
+      min-width: 800px;
 
       display:grid;
       grid-template-columns: 150px 9fr;
@@ -258,6 +279,7 @@
       background-color:  rgb(139, 80, 53);
       border: 3px solid black;
       border-radius:10px;
+      min-width: 800px;
 
       display:grid;
       grid-template-columns: 150px 9fr;
