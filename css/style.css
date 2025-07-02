@@ -99,6 +99,10 @@
   color:white;
   }
 
+ .footerlong {
+  min-width: 850px;
+ }
+
 /* -----Index----- */
   .TextSection {
   width:90%;
@@ -116,6 +120,7 @@
 
   h2 {
   margin-bottom: 1%;
+  
   }
 
     .TextSection p {

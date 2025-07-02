@@ -1,9 +1,9 @@
 Este documento es para llevar la cuenta de los cambios que ya hice y los que me faltan.
 
-• Grids ------ Agregado en "Guias" (falta colocar imagenes)
+• Grids ------ Agregado en "Guias"
 • Flexbox ----- Header
 • Bootstrap-----Agregado a todas las paginas. Libreria utilizada para iconos en barra de header y links (index). Funcion Hover agregada en header y links. 
-• Responsive ----- pendiente
+• Responsive ----- Agregado (media query en "Media","Guias" y "Relatos")
 • Mejorar Hero Section--------pendiente
 • Animacion----------pendiente
 • SEO----------pendiente
