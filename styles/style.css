@@ -1,0 +1,437 @@
+/* Header */
+.TituloPrincipal {
+  align-items: flex;
+  float: left;
+  margin-left: 10%;
+  margin-top: 20px;
+}
+
+.Logo {
+  margin-right: 30px;
+}
+
+body {
+  /* Footer */
+  /* Index - Quienes Somos */
+  /* Media */
+  /* Guias */
+  /* Relatos */
+  /* Portal */
+}
+body header {
+  background-image: url(../img/Background\ -\ Header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body header h1 {
+  padding: 1em;
+  margin-left: 10%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-size: 250%;
+  font-weight: 5px;
+  color: black;
+  text-shadow: rgb(235, 223, 119) -2px 0px 12px;
+}
+body header ul {
+  background-color: rgb(139, 80, 53);
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 7%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 110%;
+  color: black;
+  background-color: rgb(139, 80, 53);
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
+}
+body header ul li {
+  padding: 1em;
+  margin-right: 4%;
+  margin-left: 4%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+body header ul li a {
+  text-decoration: none;
+  color: black;
+  text-shadow: rgb(253, 253, 253) -2px 0px 12px;
+}
+body header ul li a:hover {
+  text-shadow: rgb(235, 223, 119) -2px 0px 12px;
+}
+@media (max-width: 600px) {
+  body .header {
+    flex-direction: column;
+    align-items: start;
+  }
+  body .header .BotonesHeader {
+    padding: 0;
+  }
+}
+body footer .LinkSection {
+  background-color: rgb(139, 80, 53);
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 100%;
+  margin-left: 5%;
+  margin-bottom: 7%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 100%;
+  color: black;
+  padding: 1em;
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+body footer .LinkSection p {
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+body footer .LinkSection ul li {
+  list-style-type: none;
+}
+body footer .LinkSection ul li a {
+  text-decoration: none;
+  color: black;
+}
+body footer .LinkSection ul li a:hover {
+  text-shadow: rgb(253, 253, 253) 0px 0px 10px;
+}
+body footer .DisclaimerSection {
+  padding: 0.2em;
+  position: relative;
+  bottom: 0;
+  background-color: rgb(63, 62, 62);
+  width: 100%;
+  border-bottom: 3px solid black;
+  text-align: center;
+  font-size: 75%;
+  color: white;
+}
+body main section {
+  background-color: rgb(139, 80, 53);
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 7%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 100;
+  color: black;
+  padding: 1em;
+  text-align: center;
+}
+body main .PresentationBackground {
+  border: none;
+  border-radius: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  width: 100%;
+  padding: 10em;
+  background-image: url(../img/BackgroundSection\ -\ Karyon_FightingPose_JadeForest.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+body main .Presentation {
+  background-color: rgb(139, 80, 53);
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 50%;
+  margin-left: 5%;
+  margin-bottom: 7%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 100;
+  color: black;
+  margin-left: 45%;
+  padding: 2em;
+}
+body main .IntroRaidingBackground {
+  border: none;
+  border-radius: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  width: 100%;
+  padding: 10em;
+  background-image: url(../img/BackgroundSection\ -\ Faddin_Incinerate_AhnKahet.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+body main .IntroRaiding {
+  background-color: rgb(139, 80, 53);
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 50%;
+  margin-left: 5%;
+  margin-bottom: 7%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 100;
+  color: black;
+  padding: 2em;
+}
+body main .IntroRoleplayBackground {
+  border: none;
+  border-radius: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  width: 100%;
+  padding: 10em;
+  background-image: url(../img/BackgroundSection\ -\ Reltor_SummonLightning_Dornogal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+body main .IntroRoleplay {
+  background-color: rgb(139, 80, 53);
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 50%;
+  margin-left: 5%;
+  margin-bottom: 7%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 100;
+  color: black;
+  margin-left: 45%;
+  padding: 2em;
+}
+@media (max-width: 1000px) {
+  body main .Presentation {
+    background-color: rgb(139, 80, 53);
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 7%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 100;
+    color: black;
+  }
+  body main .IntroRaiding {
+    background-color: rgb(139, 80, 53);
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 7%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 100;
+    color: black;
+  }
+  body main .IntroRoleplay {
+    background-color: rgb(139, 80, 53);
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 7%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 100;
+    color: black;
+  }
+}
+@media (max-width: 800px) {
+  body main .Presentation {
+    background-color: rgb(139, 80, 53);
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 7%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 80%;
+    color: black;
+  }
+  body main .IntroRaiding {
+    background-color: rgb(139, 80, 53);
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 7%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 80%;
+    color: black;
+  }
+  body main .IntroRoleplay {
+    background-color: rgb(139, 80, 53);
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 7%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 80%;
+    color: black;
+  }
+  body main .PresentationBackground {
+    padding: 1em;
+  }
+  body main .IntroRaidingBackground {
+    padding: 1em;
+  }
+  body main .IntroRoleplayBackground {
+    padding: 1em;
+  }
+}
+body .Media {
+  background-image: url(../img/Background-Media_3.jpg);
+  width: 100%;
+  padding: 5em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+body .MediaContainer {
+  padding: 0em;
+  margin-top: 7%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+body .MediaContainer img {
+  padding: 1em;
+}
+@media (max-width: 1600px) {
+  body .MediaContainer {
+    padding: 2em;
+  }
+}
+@media (max-width: 900px) {
+  body .MediaContainer {
+    padding: 1.2em;
+  }
+}
+@media (max-width: 800px) {
+  body .MediaContainer {
+    padding: 1em;
+  }
+  body .MediaContainer img {
+    padding: 0.1em;
+  }
+}
+body .Guias {
+  background-image: url(../img/Background-Guias.jpg);
+  width: 100%;
+  padding: 5em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  margin-left: 0;
+}
+body .ListaGuias {
+  padding: 3em;
+  min-width: 800px;
+  display: grid;
+  grid-template-columns: 150px 9fr;
+  grid-auto-rows: 150px;
+  row-gap: 8px;
+  column-gap: 8px;
+  position: relative;
+  text-align: center;
+}
+body .ProfilePic {
+  background-color: white;
+  border: 2px solid black;
+}
+body .ItemGuia {
+  background-color: rgb(216, 139, 104);
+  border: 2px solid black;
+  grid-row: span 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100%;
+  color: rgb(0, 0, 0);
+}
+body .GuideTitle {
+  list-style-type: none;
+  font-size: 150%;
+  font-weight: 10px;
+}
+body .GuideLink {
+  list-style-type: none;
+  font-size: 120%;
+  font-weight: 10px;
+}
+body .GuideImg {
+  list-style-type: none;
+  border: 2px solid black;
+}
+body .GuiaAutor {
+  color: black;
+}
+body .RelatosSection {
+  padding: 3em;
+  min-width: 800px;
+  display: grid;
+  grid-template-columns: 150px 9fr;
+  grid-auto-rows: 150px;
+  row-gap: 8px;
+  column-gap: 8px;
+  position: relative;
+  text-align: center;
+}
+body .RelatoTitulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-weight: 600;
+}
+body .ProfilePic {
+  background-color: white;
+  border: 2px solid black;
+}
+body .Relato {
+  background-color: rgb(216, 139, 104);
+  border: 2px solid black;
+  grid-row: span 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100%;
+  color: rgb(0, 0, 0);
+}
+body .ContentSection {
+  padding: 3em;
+  text-align: center;
+}
+body iframe {
+  overflow: auto;
+}
+body .RaidRosterTWW {
+  border: 2px solid black;
+  overflow: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
