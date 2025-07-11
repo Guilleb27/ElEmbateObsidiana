@@ -19,9 +19,11 @@ body {
   /* Portal */
 }
 body header {
-  background-image: url(../img/Background\ -\ Header.jpg);
+  background-image: url(../img/Background-Header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 4em;
+  border: 1px solid black;
 }
 body header h1 {
   padding: 1em;
@@ -44,9 +46,6 @@ body header ul {
   font-weight: 600;
   font-size: 110%;
   color: black;
-  background-color: rgb(139, 80, 53);
-  border: 3px solid black;
-  border-radius: 10px;
   margin-bottom: 0;
   display: flex;
   flex-direction: row;
@@ -121,7 +120,6 @@ body footer .DisclaimerSection {
   bottom: 0;
   background-color: rgb(63, 62, 62);
   width: 100%;
-  border-bottom: 3px solid black;
   text-align: center;
   font-size: 75%;
   color: white;
@@ -151,6 +149,7 @@ body main .PresentationBackground {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+  border: 1px solid black;
 }
 body main .Presentation {
   background-color: rgb(139, 80, 53);
@@ -177,6 +176,7 @@ body main .IntroRaidingBackground {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+  border: 1px solid black;
 }
 body main .IntroRaiding {
   background-color: rgb(139, 80, 53);
@@ -202,6 +202,7 @@ body main .IntroRoleplayBackground {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+  border: 1px solid black;
 }
 body main .IntroRoleplay {
   background-color: rgb(139, 80, 53);
@@ -303,7 +304,7 @@ body main .IntroRoleplay {
   }
 }
 body .Media {
-  background-image: url(../img/Background-Media_3.jpg);
+  background-image: url(../img/Background-Media.jpg);
   width: 100%;
   padding: 5em;
   background-repeat: no-repeat;
@@ -312,7 +313,6 @@ body .Media {
 }
 body .MediaContainer {
   padding: 0em;
-  margin-top: 7%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -322,18 +322,25 @@ body .MediaContainer img {
   padding: 1em;
 }
 @media (max-width: 1600px) {
-  body .MediaContainer {
-    padding: 2em;
+  body .MediaContainer img {
+    padding: 0.8em;
   }
 }
 @media (max-width: 900px) {
-  body .MediaContainer {
-    padding: 1.2em;
+  body .MediaContainer img {
+    padding: 0.5em;
   }
 }
 @media (max-width: 800px) {
+  body .Media {
+    padding-top: 5em;
+    padding-left: 0em;
+    padding-right: 0em;
+  }
   body .MediaContainer {
-    padding: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
   }
   body .MediaContainer img {
     padding: 0.1em;
@@ -390,6 +397,15 @@ body .GuideImg {
 body .GuiaAutor {
   color: black;
 }
+body .Relatos {
+  background-image: url(../img/Background-Relatos_1.jpg);
+  width: 100%;
+  padding: 5em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  margin-left: 0;
+}
 body .RelatosSection {
   padding: 3em;
   min-width: 800px;
@@ -421,6 +437,15 @@ body .Relato {
   justify-content: center;
   font-size: 100%;
   color: rgb(0, 0, 0);
+}
+body .Portal {
+  background-image: url(../img/Background-Portal_1.jpg);
+  width: 100%;
+  padding: 5em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  margin-left: 0;
 }
 body .ContentSection {
   padding: 3em;
