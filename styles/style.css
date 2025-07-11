@@ -15,6 +15,9 @@ body {
   /* Index - Quienes Somos */
   /* Media */
   /* Guias */
+  /*  Fotos de Perfil - Guias*/
+  /* Contenido de Guias*/
+  /* Imagenes de Guias */
   /* Relatos */
   /* Portal */
 }
@@ -357,18 +360,29 @@ body .Guias {
 }
 body .ListaGuias {
   padding: 3em;
-  min-width: 800px;
   display: grid;
-  grid-template-columns: 150px 9fr;
+  grid-template-columns: 150px 1fr;
   grid-auto-rows: 150px;
   row-gap: 8px;
   column-gap: 8px;
   position: relative;
   text-align: center;
 }
-body .ProfilePic {
+body .ProfilePic_Karyon {
   background-color: white;
+  background-image: url(../img/ProfilePic-Karyon.png);
+  background-size: 146px 146px;
   border: 2px solid black;
+  background-size: cover;
+}
+body .ProfilePic_Celduin {
+  background-color: white;
+  background-image: url(../img/ProfilePic-Celduin.png);
+  background-size: 146px 146px;
+  border: 2px solid black;
+}
+body .GuiaAutor {
+  color: black;
 }
 body .ItemGuia {
   background-color: rgb(216, 139, 104);
@@ -378,7 +392,10 @@ body .ItemGuia {
   align-items: center;
   justify-content: center;
   font-size: 100%;
-  color: rgb(0, 0, 0);
+  color: black;
+}
+body .ItemGuia ul {
+  list-style: none;
 }
 body .GuideTitle {
   list-style-type: none;
@@ -390,12 +407,247 @@ body .GuideLink {
   font-size: 120%;
   font-weight: 10px;
 }
-body .GuideImg {
+body .GuideImg-UndermineRaid {
   list-style-type: none;
   border: 2px solid black;
+  background-image: url(../img/Flyer_Undermine.png);
+  height: 150px;
+  width: 450px;
+  background-size: cover;
+  align-items: center;
+  justify-self: center;
 }
-body .GuiaAutor {
-  color: black;
+body .GuideImg-TWWS02Overview {
+  list-style-type: none;
+  border: 2px solid black;
+  background-image: url(../img/Flyer-TheWarWithin.png);
+  height: 150px;
+  width: 450px;
+  background-size: cover;
+  align-items: center;
+  justify-self: center;
+}
+body .GuideImg-TWWS02BrewmasterGuide {
+  list-style-type: none;
+  border: 2px solid black;
+  background-image: url(../img/Flyer-Brewmaster.png);
+  height: 150px;
+  width: 450px;
+  background-size: cover;
+  align-items: center;
+  justify-self: center;
+}
+body .GuideImg-TWWS02ArmsGuide {
+  list-style-type: none;
+  border: 2px solid black;
+  background-image: url(../img/Flyer-ArmsWarrior.png);
+  height: 150px;
+  width: 450px;
+  background-size: cover;
+  align-items: center;
+  justify-self: center;
+}
+body .GuideImg-TWWS02PvPGuide {
+  list-style-type: none;
+  border: 2px solid black;
+  background-image: url(../img/Flyer-PvPGuide.png);
+  height: 150px;
+  width: 450px;
+  background-size: cover;
+  align-items: center;
+  justify-self: center;
+}
+@media (max-width: 1100px) {
+  body .Guias {
+    padding-left: 0em;
+    padding-right: 0em;
+  }
+  body .ListaGuias {
+    padding: 2em;
+  }
+  body .ItemGuia {
+    padding: 1em;
+  }
+}
+@media (max-width: 800px) {
+  body .GuideImg-UndermineRaid {
+    list-style-type: none;
+    border: 2px solid black;
+    background-image: url(../img/Flyer_Undermine.png);
+    height: 150px;
+    width: 300px;
+    background-size: cover;
+    align-items: center;
+    justify-self: center;
+  }
+  body .GuideImg-TWWS02Overview {
+    list-style-type: none;
+    border: 2px solid black;
+    background-image: url(../img/Flyer-TheWarWithin.png);
+    height: 150px;
+    width: 300px;
+    background-size: cover;
+    align-items: center;
+    justify-self: center;
+  }
+  body .GuideImg-TWWS02BrewmasterGuide {
+    list-style-type: none;
+    border: 2px solid black;
+    background-image: url(../img/Flyer-Brewmaster.png);
+    height: 150px;
+    width: 300px;
+    background-size: cover;
+    align-items: center;
+    justify-self: center;
+  }
+  body .GuideImg-TWWS02ArmsGuide {
+    list-style-type: none;
+    border: 2px solid black;
+    background-image: url(../img/Flyer-ArmsWarrior.png);
+    height: 150px;
+    width: 300px;
+    background-size: cover;
+    align-items: center;
+    justify-self: center;
+  }
+  body .GuideImg-TWWS02PvPGuide {
+    list-style-type: none;
+    border: 2px solid black;
+    background-image: url(../img/Flyer-PvPGuide.png);
+    height: 150px;
+    width: 300px;
+    background-size: cover;
+    align-items: center;
+    justify-self: center;
+  }
+}
+@media (max-width: 680px) {
+  body .ListaGuias {
+    grid-auto-rows: 150px 280px 150px 150px;
+  }
+  body .GuideImg-UndermineRaid {
+    list-style-type: none;
+    border: 2px solid black;
+    background-image: url(../img/Flyer_Undermine.png);
+    height: 150px;
+    width: 200px;
+    background-size: cover;
+    align-items: center;
+    justify-self: center;
+  }
+  body .GuideImg-TWWS02Overview {
+    list-style-type: none;
+    border: 2px solid black;
+    background-image: url(../img/Flyer-TheWarWithin.png);
+    height: 150px;
+    width: 200px;
+    background-size: cover;
+    align-items: center;
+    justify-self: center;
+  }
+  body .GuideImg-TWWS02BrewmasterGuide {
+    list-style-type: none;
+    border: 2px solid black;
+    background-image: url(../img/Flyer-Brewmaster.png);
+    height: 150px;
+    width: 200px;
+    background-size: cover;
+    align-items: center;
+    justify-self: center;
+  }
+  body .GuideImg-TWWS02ArmsGuide {
+    list-style-type: none;
+    border: 2px solid black;
+    background-image: url(../img/Flyer-ArmsWarrior.png);
+    height: 150px;
+    width: 200px;
+    background-size: cover;
+    align-items: center;
+    justify-self: center;
+  }
+  body .GuideImg-TWWS02PvPGuide {
+    list-style-type: none;
+    border: 2px solid black;
+    background-image: url(../img/Flyer-PvPGuide.png);
+    height: 150px;
+    width: 200px;
+    background-size: cover;
+    align-items: center;
+    justify-self: center;
+  }
+}
+@media (max-width: 540px) {
+  body .ListaGuias {
+    grid-template-columns: 1fr;
+  }
+  body .ProfilePic_Karyon {
+    background-size: cover;
+    max-width: 146px;
+    margin-left: 30%;
+  }
+  body .ProfilePic_Celduin {
+    background-size: cover;
+    max-width: 146px;
+    margin-left: 30%;
+  }
+}
+@media (max-width: 400px) {
+  body .ProfilePic_Karyon {
+    margin-left: 15%;
+  }
+  body .ProfilePic_Celduin {
+    margin-left: 15%;
+  }
+  body .GuideImg-UndermineRaid {
+    list-style-type: none;
+    border: 2px solid black;
+    background-image: url(../img/Flyer_Undermine.png);
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    align-items: center;
+    justify-self: center;
+  }
+  body .GuideImg-TWWS02Overview {
+    list-style-type: none;
+    border: 2px solid black;
+    background-image: url(../img/Flyer-TheWarWithin.png);
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    align-items: center;
+    justify-self: center;
+  }
+  body .GuideImg-TWWS02BrewmasterGuide {
+    list-style-type: none;
+    border: 2px solid black;
+    background-image: url(../img/Flyer-Brewmaster.png);
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    align-items: center;
+    justify-self: center;
+  }
+  body .GuideImg-TWWS02ArmsGuide {
+    list-style-type: none;
+    border: 2px solid black;
+    background-image: url(../img/Flyer-ArmsWarrior.png);
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    align-items: center;
+    justify-self: center;
+  }
+  body .GuideImg-TWWS02PvPGuide {
+    list-style-type: none;
+    border: 2px solid black;
+    background-image: url(../img/Flyer-PvPGuide.png);
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    align-items: center;
+    justify-self: center;
+  }
 }
 body .Relatos {
   background-image: url(../img/Background-Relatos_1.jpg);
@@ -408,9 +660,8 @@ body .Relatos {
 }
 body .RelatosSection {
   padding: 3em;
-  min-width: 800px;
   display: grid;
-  grid-template-columns: 150px 9fr;
+  grid-template-columns: 150px 1fr;
   grid-auto-rows: 150px;
   row-gap: 8px;
   column-gap: 8px;
@@ -438,6 +689,24 @@ body .Relato {
   font-size: 100%;
   color: rgb(0, 0, 0);
 }
+@media (max-width: 800px) {
+  body .Relatos {
+    padding-left: 0em;
+    padding-right: 0em;
+  }
+  body .RelatosSection {
+    padding-top: 3em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-auto-rows: 150px;
+    row-gap: 8px;
+    column-gap: 8px;
+    position: relative;
+    text-align: center;
+  }
+}
 body .Portal {
   background-image: url(../img/Background-Portal_1.jpg);
   width: 100%;
@@ -457,6 +726,15 @@ body iframe {
 body .RaidRosterTWW {
   border: 2px solid black;
   overflow: auto;
+}
+@media (max-width: 800px) {
+  body .Portal {
+    padding-left: 0em;
+    padding-right: 0em;
+  }
+  body .ContentSection {
+    padding: 1em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,4 @@
-Buenas noches!
+Bienvenido!
 El sitio que se intenta desarrollar es una pequeña red social que nuclea las actividades de una
 comunidad.
 La comunidad “El Embate Obsidiana” nace como una hermandad en el juego World of Warcraft. 
