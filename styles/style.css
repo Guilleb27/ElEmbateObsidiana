@@ -1,4 +1,5 @@
-/* Header */
+@charset "UTF-8";
+/* -----Header----- */
 .TituloPrincipal {
   align-items: flex;
   float: left;
@@ -11,10 +12,10 @@
 }
 
 body {
-  /* Footer */
-  /* Index - Quienes Somos */
-  /* Media */
-  /* Guias */
+  /* -----Footer------ */
+  /* ----- Todas las páginas ----- */
+  /* ----- Media ----- */
+  /* ----- Guias ----- */
   /*  Fotos de Perfil - Guias*/
   /* Contenido de Guias*/
   /* Imagenes de Guias */
@@ -76,11 +77,11 @@ body header ul li a:hover {
   text-shadow: rgb(235, 223, 119) -2px 0px 12px;
 }
 @media (max-width: 600px) {
-  body .header {
+  body .Botonera {
     flex-direction: column;
     align-items: start;
   }
-  body .header .BotonesHeader {
+  body .Botonera .BotonesHeader {
     padding: 0;
   }
 }
@@ -127,6 +128,9 @@ body footer .DisclaimerSection {
   font-size: 75%;
   color: white;
 }
+body main {
+  /* ----- Index - Quienes Somos ----- */
+}
 body main section {
   background-color: rgb(139, 80, 53);
   border: 3px solid black;
@@ -140,6 +144,18 @@ body main section {
   color: black;
   padding: 1em;
   text-align: center;
+}
+@keyframes Title-shine {
+  0% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: rgb(255, 255, 255) -2px 0px 12px;
+  }
+}
+body main h2 {
+  animation: Title-shine 3s infinite;
+  animation-direction: alternate;
 }
 body main .PresentationBackground {
   border: none;
@@ -323,6 +339,12 @@ body .MediaContainer {
 }
 body .MediaContainer img {
   padding: 1em;
+}
+body .MediaImg:hover {
+  transform: scale(1.5);
+  border: 2px solid black;
+  padding: 0em;
+  transition-duration: 1s;
 }
 @media (max-width: 1600px) {
   body .MediaContainer img {

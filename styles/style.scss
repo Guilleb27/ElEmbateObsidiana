@@ -1,229 +1,235 @@
 @mixin container-style($width, $font-weight, $font-size){
-    background-color: rgb(139, 80, 53);
-    border: 3px solid black;
-    border-radius:10px;
-    width: $width;
-    margin-left: 5%;  
-    margin-bottom: 7%;  
+     background-color: rgb(139, 80, 53);
+     border: 3px solid black;
+     border-radius:10px;
+     width: $width;
+     margin-left: 5%;  
+     margin-bottom: 7%;  
 
-    font-family: "Roboto", sans-serif;
-    font-weight: $font-weight;
-    font-size: $font-size;
-    color:black;
-}
+     font-family: "Roboto", sans-serif;
+     font-weight: $font-weight;
+     font-size: $font-size;
+     color:black;
+    }
 
 
-/* Header */
+/* -----Header----- */
 .TituloPrincipal {
-    align-items: flex;
-    float:left;
-    margin-left: 10%;
-    margin-top: 20px;
-}
+ align-items: flex;
+ float:left;
+ margin-left: 10%;
+ margin-top: 20px;
+ }
 .Logo {
-    margin-right: 30px;
+ margin-right: 30px;
 }
 
 body {
-    header {
-            background-image: url(../img/Background-Header.jpg);
-            background-repeat:no-repeat;
-            background-size:cover;
-            padding-bottom: 4em;
-            border: 1px solid black;
-            h1 {
-            padding: 1em;
-            margin-left: 10%;
-    
-            font-family: "Roboto", sans-serif;
-            font-weight: 800;
-            font-size: 250%;
-            font-weight: 5px;
-            color: black;
-            text-shadow: rgb(235, 223, 119) -2px 0px 12px;
+     header {
+     background-image: url(../img/Background-Header.jpg);
+     background-repeat:no-repeat;
+     background-size:cover;
+     padding-bottom: 4em;
+     border: 1px solid black;
+             h1 {
+             padding: 1em;
+             margin-left: 10%;
+     
+             font-family: "Roboto", sans-serif;
+             font-weight: 800;
+             font-size: 250%;
+             font-weight: 5px;
+             color: black;
+             text-shadow: rgb(235, 223, 119) -2px 0px 12px;
 
-            }
-            ul {
-            @include container-style(90%, 600, 110%);
-            margin-bottom:0;
-            display:flex;
-            flex-direction:row;
-            flex-wrap:wrap;
-            justify-content: flex-start;
-            align-items: center;
-            list-style-type: none;
-
-            li{
-                padding: 1em;
-                margin-right: 4%;
-                margin-left: 4%;
-                display:flex;
-                flex-direction:row;
-                flex-wrap:wrap;
-                justify-content: flex-start;
-                align-items: center;
-                a {
-                    text-decoration: none;
-                    color:black;
-                    text-shadow: rgb(253, 253, 253) -2px 0px 12px;
-                }
-                a:hover {
-                    text-shadow: rgb(235, 223, 119) -2px 0px 12px;
+             }
+             ul {
+             @include container-style(90%, 600, 110%);
+             margin-bottom:0;
+             display:flex;
+             flex-direction:row;
+             flex-wrap:wrap;
+             justify-content: flex-start;
+             align-items: center;
+             list-style-type: none;
+                i {
                 }
 
-            }
-        }
-    }
-    @media (max-width: 600px) {
-        .header {
-            flex-direction: column;
-             align-items:start;
-            .BotonesHeader {
-                    padding: 0;
+                 li{
+                 padding: 1em;
+                 margin-right: 4%;
+                 margin-left: 4%;
+                 display:flex;
+                 flex-direction:row;
+                 flex-wrap:wrap;
+                 justify-content: flex-start;
+                 align-items: center;
+                     a {
+                     text-decoration: none;
+                     color:black;
+                     text-shadow: rgb(253, 253, 253) -2px 0px 12px;
+                    }
+                     a:hover {
+                     text-shadow: rgb(235, 223, 119) -2px 0px 12px;
+                    }
                 }
             }
-        }
+     }
 
+                     @media (max-width: 600px) {
+                     .Botonera {
+                     flex-direction: column;
+                     align-items:start;
+                     .BotonesHeader {
+                     padding: 0;
+                     }
+                     }
+                     } 
 
-/* Footer */
-    footer {
-        .LinkSection {
-              @include container-style(100%,500,100%);
-              padding: 1em;
-              border-radius:0;
-              border-left:none;
-              border-right:none;
-              text-align: center;
-              margin-left:0;
-              margin-bottom: 0;
-            p {
-                margin-bottom: 1em;
-                font-weight: 600;
+/* -----Footer------ */
+     footer {
+         .LinkSection {
+          @include container-style(100%,500,100%);
+          padding: 1em;
+          border-radius:0;
+          border-left:none;
+          border-right:none;
+          text-align: center;
+          margin-left:0;
+          margin-bottom: 0;
+             p {
+              margin-bottom: 1em;
+              font-weight: 600;
                 }
-  
-            ul {
-                li {
-                list-style-type:none;
-                
-                  a {
-                    text-decoration:none;
-                    color:black;
-                  }
-                  a:hover {
-                    text-shadow: rgb(253, 253, 253) 0px 0px 10px;
-                  }
-              }
-            }
-        }
+             ul {
+                 li {
+                 list-style-type:none;
+                     a {
+                     text-decoration:none;
+                     color:black;
+                     }
+                     a:hover {
+                     text-shadow: rgb(253, 253, 253) 0px 0px 10px;
+                     }
+                 }
+             }
+         }
+
         .DisclaimerSection {
-            padding: 0.2em;
-            position:relative;
-            bottom: 0;
-            background-color: rgb(63, 62, 62);
-            width:100%;
+         padding: 0.2em;
+         position:relative;
+         bottom: 0;
+         background-color: rgb(63, 62, 62);
+         width:100%;
 
-            text-align: center;  
-            font-size: 75%;
-            color:white;
-        }
-    }
+         text-align: center;  
+         font-size: 75%;
+         color:white;
+         }
+     }
 
-/* Index - Quienes Somos */
-    main {
+/* ----- Todas las páginas ----- */
+     main {
         section {
             @include container-style (90%, 400,100);
             padding: 1em;
             text-align:center ;
             }
 
-@mixin page-background($url){
-            border:none;
-            border-radius:0;
-            margin-left:0;
-            margin-bottom:0;
-            width:100%;
-            padding:10em;
+/* ----- Index - Quienes Somos ----- */
+@keyframes Title-shine {
+    0% {text-shadow: none}
+    100% {text-shadow: rgb(255, 255, 255) -2px 0px 12px;}
+}
+        h2 {
+            animation: Title-shine 3s infinite;
+            animation-direction:alternate;
+        }
 
-            background-image: $url;
-            background-repeat:no-repeat;
-            background-size:cover;
-            background-position:bottom;
+@mixin page-background($url){
+ border:none;
+ border-radius:0;
+ margin-left:0;
+ margin-bottom:0;
+ width:100%;
+ padding:10em;
+
+ background-image: $url;
+ background-repeat:no-repeat;
+ background-size:cover;
+ background-position:bottom;
 }
 
-
-        .PresentationBackground {
-            @include page-background (url(../img/BackgroundSection\ -\ Karyon_FightingPose_JadeForest.jpg));
-            border: 1px solid black;
-        }
+             .PresentationBackground {
+             @include page-background (url(../img/BackgroundSection\ -\ Karyon_FightingPose_JadeForest.jpg));
+             border: 1px solid black;
+             }
              .Presentation {
              @include container-style (50%, 400,100);
              margin-left: 45%;
              padding: 2em;
              }
-        .IntroRaidingBackground {
-            @include page-background (url(../img/BackgroundSection\ -\ Faddin_Incinerate_AhnKahet.jpg));
-            border: 1px solid black;
-        }
+             .IntroRaidingBackground {
+             @include page-background (url(../img/BackgroundSection\ -\ Faddin_Incinerate_AhnKahet.jpg));
+             border: 1px solid black;
+             }
              .IntroRaiding {
              @include container-style (50%, 400,100);
              padding: 2em;
              }
-        .IntroRoleplayBackground {
-            @include page-background (url(../img/BackgroundSection\ -\ Reltor_SummonLightning_Dornogal.jpg));
-            border: 1px solid black;
-        }
-
+             .IntroRoleplayBackground {
+             @include page-background (url(../img/BackgroundSection\ -\ Reltor_SummonLightning_Dornogal.jpg));
+             border: 1px solid black;
+             }
              .IntroRoleplay {
              @include container-style (50%, 400, 100);
              margin-left: 45%;
              padding: 2em;
-        }
+             }
 
-        @media (max-width: 1000px) {
-            .Presentation {
-            @include container-style (90%,400,100)
-            }
-            .IntroRaiding {
-            @include container-style (90%,400,100)
-            }
-            .IntroRoleplay {
-            @include container-style (90%,400,100)
-            }
-        }
+                 @media (max-width: 1000px) {
+                 .Presentation {
+                 @include container-style (90%,400,100)
+                 }
+                 .IntroRaiding {
+                 @include container-style (90%,400,100)
+                 }
+                 .IntroRoleplay {
+                 @include container-style (90%,400,100)
+                 }
+                 }
 
-        @media (max-width: 800px) {
-            .Presentation {
-            @include container-style (90%,400,80%)
-            }
-            .IntroRaiding {
-            @include container-style (90%,400,80%)
-            }
-            .IntroRoleplay {
-            @include container-style (90%,400,80%)
-            }     
-            .PresentationBackground {
-                padding: 1em;
-            }       
-            .IntroRaidingBackground {
-                padding:1em;
-            }
-            .IntroRoleplayBackground {
-                padding:1em;
-            }
-
-        }
+                 @media (max-width: 800px) {
+                 .Presentation {
+                 @include container-style (90%,400,80%)
+                 }
+                 .IntroRaiding {
+                 @include container-style (90%,400,80%)
+                 }
+                 .IntroRoleplay {
+                 @include container-style (90%,400,80%)
+                 }     
+                 .PresentationBackground {
+                  padding: 1em;
+                 }       
+                 .IntroRaidingBackground {
+                  padding:1em;
+                 }
+                 .IntroRoleplayBackground {
+                 padding:1em;
+                 }
+                 }
     }
 
-/* Media */
-    .Media {
-    background-image: url(../img/Background-Media.jpg);
-    width:100%;
-    padding:5em;
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:bottom;
-        
-    }
+/* ----- Media ----- */
+     .Media {
+     background-image: url(../img/Background-Media.jpg);
+     width:100%;
+     padding:5em;
+     background-repeat:no-repeat;
+     background-size:cover;
+     background-position:bottom;
+     }
          .MediaContainer {
          padding: 0em;
         
@@ -232,40 +238,47 @@ body {
          flex-wrap:wrap;
          align-items: center;
          }
+
          .MediaContainer img {
          padding: 1em;
          }
 
-    @media (max-width: 1600px) {
-        .MediaContainer img {
-        padding: 0.8em;
-        }
-    }
-    
-    @media (max-width: 900px) {
-        .MediaContainer img {
-            padding: 0.5em;
-        }
-    }
+         .MediaImg:hover {
+            transform:scale(1.5);
+            border: 2px solid black;
+            padding:0em;
+            transition-duration: 1s;
+         }
 
-    @media (max-width: 800px) {
-        .Media {
-        padding-top:5em;
-        padding-left:0em;
-        padding-right:0em;
-        }
-       .MediaContainer {
-        margin-left:0;
-        margin-right:0;
-        padding:0;
+             @media (max-width: 1600px) { 
+             .MediaContainer img {
+             padding: 0.8em;
+             }
+             }
+        
+             @media (max-width: 900px) {
+             .MediaContainer img {
+             padding: 0.5em;
+             }
+             }
 
-        }
-       .MediaContainer img {
-        padding: 0.1em;
-       }
-    }
+             @media (max-width: 800px) {
+             .Media {
+             padding-top:5em;
+             padding-left:0em;
+             padding-right:0em;
+             }
+             .MediaContainer {
+             margin-left:0;
+            margin-right:0;
+             padding:0;
+             }
+             .MediaContainer img {
+             padding: 0.1em;
+             }
+             }
 
-/* Guias */
+/* ----- Guias ----- */
 @mixin item_guias ($font-size,$grid-row) {
          background-color: rgb(216, 139, 104); 
          border: 2px solid black;
@@ -279,17 +292,17 @@ body {
          color:black;  
 }
 
-    .Guias {
-    background-image: url(../img/Background-Guias.jpg);
-    width:100%;
-    padding:5em;
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:bottom;
-    margin-left:0;
-    }
+     .Guias {
+     background-image: url(../img/Background-Guias.jpg);
+     width:100%;
+     padding:5em;
+     background-repeat:no-repeat;
+     background-size:cover;
+     background-position:bottom;
+     margin-left:0;
+     }
 
-    .ListaGuias {
+         .ListaGuias {
          padding: 3em;
          display:grid;
          grid-template-columns: 150px 1fr;
@@ -301,267 +314,262 @@ body {
         
          }
 
-         /*  Fotos de Perfil - Guias*/
+            /*  Fotos de Perfil - Guias*/
 
-         .ProfilePic_Karyon {
-         background-color: white;
-         background-image: url(../img/ProfilePic-Karyon.png);
-         background-size: 146px 146px;
-         border: 2px solid black;
-         background-size:cover;
-         }
-         .ProfilePic_Celduin {
-         background-color: white;
-         background-image: url(../img/ProfilePic-Celduin.png);
-         background-size: 146px 146px;
-         border: 2px solid black;
-         }
-
-         .GuiaAutor {
-         color:black;
-         }
-
-         /* Contenido de Guias*/
-
-         .ItemGuia {
-            @include item_guias(100%,span 2);
-            ul {list-style:none;}
-         }
-            .GuideTitle {
-              list-style-type:none;
-              font-size: 150%;
-              font-weight: 10px;
+             .ProfilePic_Karyon {
+             background-color: white;
+             background-image: url(../img/ProfilePic-Karyon.png);
+             background-size: 146px 146px;
+             border: 2px solid black;
+             background-size:cover;
              }
-            .GuideLink {
-              list-style-type:none;
-              font-size: 120%;
-              font-weight: 10px;
+             .ProfilePic_Celduin {
+             background-color: white;
+             background-image: url(../img/ProfilePic-Celduin.png);
+             background-size: 146px 146px;
+             border: 2px solid black;
              }
-             /* Imagenes de Guias */
-             @mixin img-guias ($background-image, $height,$width) {
-              list-style-type:none;
-              border:2px solid black;
-              background-image:$background-image;
-              height:$height;
-              width:$width;
-              background-size:cover;
-              align-items:center;
-              justify-self: center;
+    
+             .GuiaAutor {
+             color:black;
              }
-             .GuideImg-UndermineRaid {
-              @include img-guias (url(../img/Flyer_Undermine.png),150px,450px);
-              }
-             .GuideImg-TWWS02Overview {
-              @include img-guias (url(../img/Flyer-TheWarWithin.png),150px,450px)
-              }
-              .GuideImg-TWWS02BrewmasterGuide {
-              @include img-guias (url(../img/Flyer-Brewmaster.png),150px,450px);
-              }
-              .GuideImg-TWWS02ArmsGuide {
-              @include img-guias (url(../img/Flyer-ArmsWarrior.png),150px,450px)
-              }
-              .GuideImg-TWWS02PvPGuide {
-              @include img-guias (url(../img/Flyer-PvPGuide.png),150px,450px)
-              }
+
+             /* Contenido de Guias*/
+
+             .ItemGuia {
+                @include item_guias(100%,span 2);
+                ul {list-style:none;}
+             }
+                 .GuideTitle {
+                 list-style-type:none;
+                 font-size: 150%;
+                 font-weight: 10px;
+                 }
+                 .GuideLink {
+                 list-style-type:none;
+                 font-size: 120%;
+                 font-weight: 10px;
+                 }
+                 /* Imagenes de Guias */
+                 @mixin img-guias ($background-image, $height,$width) {
+                 list-style-type:none;
+                 border:2px solid black;
+                 background-image:$background-image;
+                 height:$height;
+                 width:$width;
+                 background-size:cover;
+                 align-items:center;
+                 justify-self: center;
+                 }
+                 .GuideImg-UndermineRaid {
+                 @include img-guias (url(../img/Flyer_Undermine.png),150px,450px);
+                 }
+                 .GuideImg-TWWS02Overview {
+                 @include img-guias (url(../img/Flyer-TheWarWithin.png),150px,450px)
+                 }
+                 .GuideImg-TWWS02BrewmasterGuide {
+                 @include img-guias (url(../img/Flyer-Brewmaster.png),150px,450px);
+                 }
+                 .GuideImg-TWWS02ArmsGuide {
+                 @include img-guias (url(../img/Flyer-ArmsWarrior.png),150px,450px)
+                 }
+                 .GuideImg-TWWS02PvPGuide {
+                 @include img-guias (url(../img/Flyer-PvPGuide.png),150px,450px)
+                 }
        
 
-    @media (max-width:1100px) {
-    .Guias {
-    padding-left:0em;
-    padding-right:0em;
-    }
-    .ListaGuias {
-        padding:2em;
-        }
-        .ItemGuia {
-        padding: 1em;
-         }
-    }
+                     @media (max-width:1100px) {
+                     .Guias {
+                     padding-left:0em;
+                     padding-right:0em;
+                     }
+                     .ListaGuias {
+                         padding:2em;
+                         }
+                         .ItemGuia {
+                         padding: 1em;
+                         }
+                     }
 
-    @media (max-width:800px){
-             .GuideImg-UndermineRaid {
-              @include img-guias (url(../img/Flyer_Undermine.png),150px,300px);
-              }
-             .GuideImg-TWWS02Overview {
-              @include img-guias (url(../img/Flyer-TheWarWithin.png),150px,300px)
-              }
-              .GuideImg-TWWS02BrewmasterGuide {
-              @include img-guias (url(../img/Flyer-Brewmaster.png),150px,300px);
-              }
-              .GuideImg-TWWS02ArmsGuide {
-              @include img-guias (url(../img/Flyer-ArmsWarrior.png),150px,300px)
-              }
-              .GuideImg-TWWS02PvPGuide {
-              @include img-guias (url(../img/Flyer-PvPGuide.png),150px,300px)
-              }
-    }
+                     @media (max-width:800px){
+                     .GuideImg-UndermineRaid {
+                     @include img-guias (url(../img/Flyer_Undermine.png),150px,300px);
+                     }
+                     .GuideImg-TWWS02Overview {
+                     @include img-guias (url(../img/Flyer-TheWarWithin.png),150px,300px)
+                     }
+                     .GuideImg-TWWS02BrewmasterGuide {
+                     @include img-guias (url(../img/Flyer-Brewmaster.png),150px,300px);
+                     }
+                     .GuideImg-TWWS02ArmsGuide {
+                     @include img-guias (url(../img/Flyer-ArmsWarrior.png),150px,300px)
+                     }
+                     .GuideImg-TWWS02PvPGuide {
+                     @include img-guias (url(../img/Flyer-PvPGuide.png),150px,300px)
+                     }
+                     }
 
-    @media (max-width:680px){
-            .ListaGuias {
-                grid-auto-rows: 150px 280px 150px 150px;
-            }
+                     @media (max-width:680px){
+                     .ListaGuias {
+                     grid-auto-rows: 150px 280px 150px 150px;
+                     }
+                         .GuideImg-UndermineRaid {
+                          @include img-guias (url(../img/Flyer_Undermine.png),150px,200px);
+                          }
+                         .GuideImg-TWWS02Overview {
+                          @include img-guias (url(../img/Flyer-TheWarWithin.png),150px,200px)
+                          }
+                          .GuideImg-TWWS02BrewmasterGuide {
+                          @include img-guias (url(../img/Flyer-Brewmaster.png),150px,200px);
+                          }
+                          .GuideImg-TWWS02ArmsGuide {
+                          @include img-guias (url(../img/Flyer-ArmsWarrior.png),150px,200px)
+                          }
+                          .GuideImg-TWWS02PvPGuide {
+                          @include img-guias (url(../img/Flyer-PvPGuide.png),150px, 200px)
+                          }
+                     }
 
-             .GuideImg-UndermineRaid {
-              @include img-guias (url(../img/Flyer_Undermine.png),150px,200px);
-              }
-             .GuideImg-TWWS02Overview {
-              @include img-guias (url(../img/Flyer-TheWarWithin.png),150px,200px)
-              }
-              .GuideImg-TWWS02BrewmasterGuide {
-              @include img-guias (url(../img/Flyer-Brewmaster.png),150px,200px);
-              }
-              .GuideImg-TWWS02ArmsGuide {
-              @include img-guias (url(../img/Flyer-ArmsWarrior.png),150px,200px)
-              }
-              .GuideImg-TWWS02PvPGuide {
-              @include img-guias (url(../img/Flyer-PvPGuide.png),150px, 200px)
-              }
-    }
+                      @media (max-width:540px) {
+                     .ListaGuias {
+                     grid-template-columns: 1fr;
+                     }
+                     .ProfilePic_Karyon {
+                     background-size:cover;
+                     max-width:146px;
+                     margin-left:30%;
+                     }
+                     .ProfilePic_Celduin {
+                     background-size:cover;
+                     max-width:146px;
+                     margin-left:30%;
+                     }
+                     }
 
-    @media (max-width:540px) {
-        .ListaGuias {
-            grid-template-columns: 1fr;
-        }
-        .ProfilePic_Karyon {
-         background-size:cover;
-         max-width:146px;
-         margin-left:30%;
-         }
-        .ProfilePic_Celduin {
-         background-size:cover;
-         max-width:146px;
-         margin-left:30%;
-         }
-    }
-    @media (max-width:400px) {
-        .ProfilePic_Karyon {
-            margin-left:15%;
-        }
-        .ProfilePic_Celduin {
-            margin-left:15%;
-        }
- 
-             .GuideImg-UndermineRaid {
-              @include img-guias (url(../img/Flyer_Undermine.png),150px,150px);
-              }
-             .GuideImg-TWWS02Overview {
-              @include img-guias (url(../img/Flyer-TheWarWithin.png),150px,150px)
-              }
-              .GuideImg-TWWS02BrewmasterGuide {
-              @include img-guias (url(../img/Flyer-Brewmaster.png),150px,150px);
-              }
-              .GuideImg-TWWS02ArmsGuide {
-              @include img-guias (url(../img/Flyer-ArmsWarrior.png),150px,150px)
-              }
-              .GuideImg-TWWS02PvPGuide {
-              @include img-guias (url(../img/Flyer-PvPGuide.png),150px, 150px)
-              }       
-    }
+                     @media (max-width:400px) {
+                     .ProfilePic_Karyon {
+                     margin-left:15%;
+                     }
+                     .ProfilePic_Celduin {
+                     margin-left:15%;
+                     }
+                         .GuideImg-UndermineRaid {
+                         @include img-guias (url(../img/Flyer_Undermine.png),150px,150px);
+                         }
+                         .GuideImg-TWWS02Overview {
+                         @include img-guias (url(../img/Flyer-TheWarWithin.png),150px,150px)
+                         }
+                         .GuideImg-TWWS02BrewmasterGuide {
+                         @include img-guias (url(../img/Flyer-Brewmaster.png),150px,150px);
+                         }
+                         .GuideImg-TWWS02ArmsGuide {
+                         @include img-guias (url(../img/Flyer-ArmsWarrior.png),150px,150px)
+                         }
+                         .GuideImg-TWWS02PvPGuide {
+                         @include img-guias (url(../img/Flyer-PvPGuide.png),150px, 150px)
+                         }       
+                         }
 
 
 /* Relatos */
-    .Relatos {
-    background-image: url(../img/Background-Relatos_1.jpg);
-    width:100%;
-    padding:5em;
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:bottom;
-    margin-left:0;
+     .Relatos {
+     background-image: url(../img/Background-Relatos_1.jpg);
+     width:100%;
+     padding:5em;
+     background-repeat:no-repeat;
+     background-size:cover;
+     background-position:bottom;
+     margin-left:0;
      }
     
-    .RelatosSection {
-      padding: 3em;
-    //   min-width: 800px;
-
-      display:grid;
-      grid-template-columns: 150px 1fr;
-      grid-auto-rows: 150px;
-      row-gap: 8px;
-      column-gap: 8px;
-      position:relative;
-
-      text-align: center;
-      }
-         .RelatoTitulo {
-         display:flex;
-         align-items: center;
-         justify-content: center;
-         color:black;
-         font-weight:600;
+         .RelatosSection {
+         padding: 3em;
+         display:grid;
+         grid-template-columns: 150px 1fr;
+         grid-auto-rows: 150px;
+         row-gap: 8px;
+         column-gap: 8px;
+         position:relative;
+         text-align: center;
          }
+             .RelatoTitulo {
+             display:flex;
+             align-items: center;
+             justify-content: center;
+             color:black;
+             font-weight:600;
+             }
   
-         .ProfilePic {
-         background-color: white;
-         border: 2px solid black;
-         }
+             .ProfilePic {
+             background-color: white;
+             border: 2px solid black;
+             }
       
-         .Relato {
-         background-color: rgb(216, 139, 104); 
-         border: 2px solid black;
-         grid-row: span 4;
+             .Relato {
+             background-color: rgb(216, 139, 104); 
+             border: 2px solid black;
+             grid-row: span 4;
           
-         display:flex;
-         align-items: center;
-         justify-content: center;
+             display:flex;
+             align-items: center;
+             justify-content: center;
 
-         font-size: 100%;
-         color:rgb(0, 0, 0);  
-         }
-    @media (max-width:800px) {
-      .Relatos {
-        padding-left:0em;
-        padding-right:0em;
-      }
-      
-      .RelatosSection {
-      padding-top: 3em;
-      padding-left:0.5em;
-      padding-right:0.5em;
+             font-size: 100%;
+             color:rgb(0, 0, 0);  
+             }
+                 @media (max-width:800px) {
+                 .Relatos {
+                 padding-left:0em;
+                 padding-right:0em;
+                 }
+                 .RelatosSection {
+                 padding-top: 3em;
+                 padding-left:0.5em;
+                 padding-right:0.5em;
 
-      display:grid;
-      grid-template-columns: 150px 1fr;
-      grid-auto-rows: 150px;
-      row-gap: 8px;
-      column-gap: 8px;
-      position:relative;
+                 display:grid;
+                 grid-template-columns: 150px 1fr;
+                 grid-auto-rows: 150px;
+                 row-gap: 8px;
+                 column-gap: 8px;
+                 position:relative;
 
-      text-align: center;
-      }
-    }
+                 text-align: center;
+                 }
+                 }
     
 
 /* Portal */
-    .Portal {
-    background-image: url(../img/Background-Portal_1.jpg);
-    width:100%;
-    padding:5em;
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:bottom;
-    margin-left:0;
+     .Portal {
+     background-image: url(../img/Background-Portal_1.jpg);
+     width:100%;
+     padding:5em;
+     background-repeat:no-repeat;
+     background-size:cover;
+     background-position:bottom;
+     margin-left:0;
      }
-     .ContentSection {
-      padding: 3em;
-      text-align: center;
-     }
+         .ContentSection {
+         padding: 3em;
+         text-align: center;
+         }
          iframe {
          overflow:auto;
-        }
+         }
          .RaidRosterTWW {
          border: 2px solid black;
          overflow:auto;
          }
 
-    @media (max-width:800px) {
-    .Portal {
-        padding-left:0em;
-        padding-right:0em;
-    }
-    .ContentSection {
-        padding: 1em;
-    }
-
-    }
+             @media (max-width:800px) {
+             .Portal {
+             padding-left:0em;
+             padding-right:0em;
+             }
+             .ContentSection {
+             padding: 1em;
+             }
+             }
 
 }
+
