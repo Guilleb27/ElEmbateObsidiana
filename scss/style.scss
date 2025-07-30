@@ -13,24 +13,24 @@
     }
 
 
-/* -----Header----- */
-.TituloPrincipal {
- align-items: flex;
- float:left;
- margin-left: 10%;
- margin-top: 20px;
- }
-.Logo {
- margin-right: 30px;
-}
-
+/* ----- Todas las páginas ----- */
 body {
+/* -----Header----- */
+
      header {
      background-image: url(../img/Background-Header.jpg);
      background-repeat:no-repeat;
      background-size:cover;
      padding-bottom: 4em;
      border: 1px solid black;
+
+             .Logo {
+             align-items: flex;
+             float:left;
+             margin-left: 10%;
+             margin-top: 20px;
+             margin-right: 30px;
+             }
              h1 {
              padding: 1em;
              margin-left: 10%;
@@ -43,7 +43,7 @@ body {
              text-shadow: rgb(235, 223, 119) -2px 0px 12px;
 
              }
-             ul {
+             .Botonera {
              @include container-style(90%, 600, 110%);
              margin-bottom:0;
              display:flex;
@@ -52,8 +52,6 @@ body {
              justify-content: flex-start;
              align-items: center;
              list-style-type: none;
-                i {
-                }
 
                  li{
                  padding: 1em;
@@ -73,18 +71,26 @@ body {
                      text-shadow: rgb(235, 223, 119) -2px 0px 12px;
                     }
                 }
-            }
-     }
+             }
+        }
 
                      @media (max-width: 600px) {
-                     .Botonera {
+                     header .Botonera {
                      flex-direction: column;
                      align-items:start;
                      .BotonesHeader {
                      padding: 0;
                      }
                      }
-                     } 
+                     }
+/* -----Main ----- */
+    main {
+             section {
+             @include container-style (90%, 400,100);
+             padding: 1em;
+             text-align:center ;
+             }
+         }
 
 /* -----Footer------ */
      footer {
@@ -128,13 +134,6 @@ body {
          }
      }
 
-/* ----- Todas las páginas ----- */
-     main {
-        section {
-            @include container-style (90%, 400,100);
-            padding: 1em;
-            text-align:center ;
-            }
 
 /* ----- Index - Quienes Somos ----- */
 @keyframes Title-shine {
@@ -219,7 +218,6 @@ body {
                  padding:1em;
                  }
                  }
-    }
 
 /* ----- Media ----- */
      .Media {
@@ -278,6 +276,12 @@ body {
              }
              .MediaImg {
              width:100%;
+             }
+             .MediaImg:hover {
+             transform:scale(1.15);
+             border: 2px solid black;
+             padding:0em;
+             transition-duration: 1s;
              }
              }
               @media (max-width: 500px){

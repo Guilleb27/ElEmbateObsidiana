@@ -1,19 +1,10 @@
 @charset "UTF-8";
-/* -----Header----- */
-.TituloPrincipal {
-  align-items: flex;
-  float: left;
-  margin-left: 10%;
-  margin-top: 20px;
-}
-
-.Logo {
-  margin-right: 30px;
-}
-
+/* ----- Todas las páginas ----- */
 body {
+  /* -----Header----- */
+  /* -----Main ----- */
   /* -----Footer------ */
-  /* ----- Todas las páginas ----- */
+  /* ----- Index - Quienes Somos ----- */
   /* ----- Media ----- */
   /* ----- Guias ----- */
   /*  Fotos de Perfil - Guias*/
@@ -29,6 +20,13 @@ body header {
   padding-bottom: 4em;
   border: 1px solid black;
 }
+body header .Logo {
+  align-items: flex;
+  float: left;
+  margin-left: 10%;
+  margin-top: 20px;
+  margin-right: 30px;
+}
 body header h1 {
   padding: 1em;
   margin-left: 10%;
@@ -39,7 +37,7 @@ body header h1 {
   color: black;
   text-shadow: rgb(235, 223, 119) -2px 0px 12px;
 }
-body header ul {
+body header .Botonera {
   background-color: rgb(190, 109, 72);
   border: 3px solid black;
   border-radius: 10px;
@@ -58,7 +56,7 @@ body header ul {
   align-items: center;
   list-style-type: none;
 }
-body header ul li {
+body header .Botonera li {
   padding: 1em;
   margin-right: 4%;
   margin-left: 4%;
@@ -68,22 +66,36 @@ body header ul li {
   justify-content: flex-start;
   align-items: center;
 }
-body header ul li a {
+body header .Botonera li a {
   text-decoration: none;
   color: black;
   text-shadow: rgb(253, 253, 253) -2px 0px 12px;
 }
-body header ul li a:hover {
+body header .Botonera li a:hover {
   text-shadow: rgb(235, 223, 119) -2px 0px 12px;
 }
 @media (max-width: 600px) {
-  body .Botonera {
+  body header .Botonera {
     flex-direction: column;
     align-items: start;
   }
-  body .Botonera .BotonesHeader {
+  body header .Botonera .BotonesHeader {
     padding: 0;
   }
+}
+body main section {
+  background-color: rgb(190, 109, 72);
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 7%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 100;
+  color: black;
+  padding: 1em;
+  text-align: center;
 }
 body footer .LinkSection {
   background-color: rgb(190, 109, 72);
@@ -128,23 +140,6 @@ body footer .DisclaimerSection {
   font-size: 75%;
   color: white;
 }
-body main {
-  /* ----- Index - Quienes Somos ----- */
-}
-body main section {
-  background-color: rgb(190, 109, 72);
-  border: 3px solid black;
-  border-radius: 10px;
-  width: 90%;
-  margin-left: 5%;
-  margin-bottom: 7%;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 100;
-  color: black;
-  padding: 1em;
-  text-align: center;
-}
 @keyframes Title-shine {
   0% {
     text-shadow: none;
@@ -153,11 +148,11 @@ body main section {
     text-shadow: rgb(255, 255, 255) -2px 0px 12px;
   }
 }
-body main h2 {
+body h2 {
   animation: Title-shine 3s infinite;
   animation-direction: alternate;
 }
-body main .PresentationBackground {
+body .PresentationBackground {
   border: none;
   border-radius: 0;
   margin-left: 0;
@@ -170,7 +165,7 @@ body main .PresentationBackground {
   background-position: bottom;
   border: 1px solid black;
 }
-body main .Presentation {
+body .Presentation {
   background-color: rgb(190, 109, 72);
   border: 3px solid black;
   border-radius: 10px;
@@ -184,7 +179,7 @@ body main .Presentation {
   margin-left: 45%;
   padding: 2em;
 }
-body main .IntroRaidingBackground {
+body .IntroRaidingBackground {
   border: none;
   border-radius: 0;
   margin-left: 0;
@@ -197,7 +192,7 @@ body main .IntroRaidingBackground {
   background-position: bottom;
   border: 1px solid black;
 }
-body main .IntroRaiding {
+body .IntroRaiding {
   background-color: rgb(190, 109, 72);
   border: 3px solid black;
   border-radius: 10px;
@@ -210,7 +205,7 @@ body main .IntroRaiding {
   color: black;
   padding: 2em;
 }
-body main .IntroRoleplayBackground {
+body .IntroRoleplayBackground {
   border: none;
   border-radius: 0;
   margin-left: 0;
@@ -223,7 +218,7 @@ body main .IntroRoleplayBackground {
   background-position: bottom;
   border: 1px solid black;
 }
-body main .IntroRoleplay {
+body .IntroRoleplay {
   background-color: rgb(190, 109, 72);
   border: 3px solid black;
   border-radius: 10px;
@@ -238,7 +233,7 @@ body main .IntroRoleplay {
   padding: 2em;
 }
 @media (max-width: 1000px) {
-  body main .Presentation {
+  body .Presentation {
     background-color: rgb(190, 109, 72);
     border: 3px solid black;
     border-radius: 10px;
@@ -250,7 +245,7 @@ body main .IntroRoleplay {
     font-size: 100;
     color: black;
   }
-  body main .IntroRaiding {
+  body .IntroRaiding {
     background-color: rgb(190, 109, 72);
     border: 3px solid black;
     border-radius: 10px;
@@ -262,7 +257,7 @@ body main .IntroRoleplay {
     font-size: 100;
     color: black;
   }
-  body main .IntroRoleplay {
+  body .IntroRoleplay {
     background-color: rgb(190, 109, 72);
     border: 3px solid black;
     border-radius: 10px;
@@ -276,7 +271,7 @@ body main .IntroRoleplay {
   }
 }
 @media (max-width: 800px) {
-  body main .Presentation {
+  body .Presentation {
     background-color: rgb(190, 109, 72);
     border: 3px solid black;
     border-radius: 10px;
@@ -288,7 +283,7 @@ body main .IntroRoleplay {
     font-size: 80%;
     color: black;
   }
-  body main .IntroRaiding {
+  body .IntroRaiding {
     background-color: rgb(190, 109, 72);
     border: 3px solid black;
     border-radius: 10px;
@@ -300,7 +295,7 @@ body main .IntroRoleplay {
     font-size: 80%;
     color: black;
   }
-  body main .IntroRoleplay {
+  body .IntroRoleplay {
     background-color: rgb(190, 109, 72);
     border: 3px solid black;
     border-radius: 10px;
@@ -312,13 +307,13 @@ body main .IntroRoleplay {
     font-size: 80%;
     color: black;
   }
-  body main .PresentationBackground {
+  body .PresentationBackground {
     padding: 1em;
   }
-  body main .IntroRaidingBackground {
+  body .IntroRaidingBackground {
     padding: 1em;
   }
-  body main .IntroRoleplayBackground {
+  body .IntroRoleplayBackground {
     padding: 1em;
   }
 }
@@ -372,6 +367,12 @@ body .MediaImg:hover {
   }
   body .MediaImg {
     width: 100%;
+  }
+  body .MediaImg:hover {
+    transform: scale(1.15);
+    border: 2px solid black;
+    padding: 0em;
+    transition-duration: 1s;
   }
 }
 @media (max-width: 500px) {
