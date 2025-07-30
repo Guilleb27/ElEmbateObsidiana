@@ -40,7 +40,7 @@ body header h1 {
   text-shadow: rgb(235, 223, 119) -2px 0px 12px;
 }
 body header ul {
-  background-color: rgb(139, 80, 53);
+  background-color: rgb(190, 109, 72);
   border: 3px solid black;
   border-radius: 10px;
   width: 90%;
@@ -86,7 +86,7 @@ body header ul li a:hover {
   }
 }
 body footer .LinkSection {
-  background-color: rgb(139, 80, 53);
+  background-color: rgb(190, 109, 72);
   border: 3px solid black;
   border-radius: 10px;
   width: 100%;
@@ -132,7 +132,7 @@ body main {
   /* ----- Index - Quienes Somos ----- */
 }
 body main section {
-  background-color: rgb(139, 80, 53);
+  background-color: rgb(190, 109, 72);
   border: 3px solid black;
   border-radius: 10px;
   width: 90%;
@@ -171,7 +171,7 @@ body main .PresentationBackground {
   border: 1px solid black;
 }
 body main .Presentation {
-  background-color: rgb(139, 80, 53);
+  background-color: rgb(190, 109, 72);
   border: 3px solid black;
   border-radius: 10px;
   width: 50%;
@@ -198,7 +198,7 @@ body main .IntroRaidingBackground {
   border: 1px solid black;
 }
 body main .IntroRaiding {
-  background-color: rgb(139, 80, 53);
+  background-color: rgb(190, 109, 72);
   border: 3px solid black;
   border-radius: 10px;
   width: 50%;
@@ -224,7 +224,7 @@ body main .IntroRoleplayBackground {
   border: 1px solid black;
 }
 body main .IntroRoleplay {
-  background-color: rgb(139, 80, 53);
+  background-color: rgb(190, 109, 72);
   border: 3px solid black;
   border-radius: 10px;
   width: 50%;
@@ -239,7 +239,7 @@ body main .IntroRoleplay {
 }
 @media (max-width: 1000px) {
   body main .Presentation {
-    background-color: rgb(139, 80, 53);
+    background-color: rgb(190, 109, 72);
     border: 3px solid black;
     border-radius: 10px;
     width: 90%;
@@ -251,7 +251,7 @@ body main .IntroRoleplay {
     color: black;
   }
   body main .IntroRaiding {
-    background-color: rgb(139, 80, 53);
+    background-color: rgb(190, 109, 72);
     border: 3px solid black;
     border-radius: 10px;
     width: 90%;
@@ -263,7 +263,7 @@ body main .IntroRoleplay {
     color: black;
   }
   body main .IntroRoleplay {
-    background-color: rgb(139, 80, 53);
+    background-color: rgb(190, 109, 72);
     border: 3px solid black;
     border-radius: 10px;
     width: 90%;
@@ -277,7 +277,7 @@ body main .IntroRoleplay {
 }
 @media (max-width: 800px) {
   body main .Presentation {
-    background-color: rgb(139, 80, 53);
+    background-color: rgb(190, 109, 72);
     border: 3px solid black;
     border-radius: 10px;
     width: 90%;
@@ -289,7 +289,7 @@ body main .IntroRoleplay {
     color: black;
   }
   body main .IntroRaiding {
-    background-color: rgb(139, 80, 53);
+    background-color: rgb(190, 109, 72);
     border: 3px solid black;
     border-radius: 10px;
     width: 90%;
@@ -301,7 +301,7 @@ body main .IntroRoleplay {
     color: black;
   }
   body main .IntroRoleplay {
-    background-color: rgb(139, 80, 53);
+    background-color: rgb(190, 109, 72);
     border: 3px solid black;
     border-radius: 10px;
     width: 90%;
@@ -368,7 +368,15 @@ body .MediaImg:hover {
     padding: 0;
   }
   body .MediaContainer img {
-    padding: 0.1em;
+    padding: 0.5em;
+  }
+  body .MediaImg {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  body .MediaContainer img {
+    padding: 0.2em;
   }
 }
 body .Guias {

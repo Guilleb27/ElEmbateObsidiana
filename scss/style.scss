@@ -1,5 +1,5 @@
 @mixin container-style($width, $font-weight, $font-size){
-     background-color: rgb(139, 80, 53);
+     background-color: rgb(190, 109, 72);
      border: 3px solid black;
      border-radius:10px;
      width: $width;
@@ -270,11 +270,19 @@ body {
              }
              .MediaContainer {
              margin-left:0;
-            margin-right:0;
+             margin-right:0;
              padding:0;
              }
              .MediaContainer img {
-             padding: 0.1em;
+             padding: 0.5em;
+             }
+             .MediaImg {
+             width:100%;
+             }
+             }
+              @media (max-width: 500px){
+              .MediaContainer img {
+              padding:0.2em;
              }
              }
 
